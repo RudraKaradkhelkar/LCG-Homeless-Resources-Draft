@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support the Homeless</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.1.0/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.1.0/dist/ol.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Support For the Homeless</h1>
+            <div class="buttons">
+                <button onclick="scrollToSection('info')">Information</button>
+                <button onclick="scrollToSection('volunteer')">Volunteer</button>
+                <button onclick="scrollToSection('map')">Locations</button>
+                <button onclick="scrollToSection('contact')">Contact</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="info">
+            <h2>Information for the Homeless</h2>
+            <div class="info-container">
+                <div class="info-title">Shelter 1</div>
+                <div class="info-dropdown">
+                    <button onclick="toggleDropdown('shelter1')">More Info <span class="chevron">&#9660;</span></button>
+                    <div id="shelter1" class="dropdown-content">
+                        <p>Details about Shelter 1: Address, contact info, services provided, etc.</p>
+                        <p><a onclick="scrollToSection('map')">See Location on Map</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-title">Food Bank 1</div>
+                <div class="info-dropdown">
+                    <button onclick="toggleDropdown('foodbank1')">More Info <span class="chevron">&#9660;</span></button>
+                    <div id="foodbank1" class="dropdown-content">
+                        <p>Details about Food Bank 1: Address, contact info, services provided, etc.</p>
+                        <p><a onclick="scrollToSection('map')">See Location on Map</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="volunteer">
+            <h2>Volunteer Opportunities</h2>
+            <div class="info-container">
+                <div class="info-title">Soup Kitchen 1</div>
+                <div class="info-dropdown">
+                    <button onclick="toggleDropdown('soupkitchen1')">More Info <span class="chevron">&#9660;</span></button>
+                    <div id="soupkitchen1" class="dropdown-content">
+                        <p>Details about Soup Kitchen 1: How to volunteer, contact info, schedule, etc.</p>
+                        <p><a onclick="scrollToSection('map')">See Location on Map</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="info-title">Food Drive 1</div>
+                <div class="info-dropdown">
+                    <button onclick="toggleDropdown('fooddrive1')">More Info <span class="chevron">&#9660;</span></button>
+                    <div id="fooddrive1" class="dropdown-content">
+                        <p>Details about Food Drive 1: How to volunteer, contact info, schedule, etc.</p>
+                        <p><a onclick="scrollToSection('map')">See Location on Map</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <h2>Locations <small>(click on marker to open in new tab)</small></h2>
+            <div id="map-container">
+              <div id="map1"></div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact information and form for inquiries.</p>
+        </section>
+    </main>
+    <section id="links">
+        <div class="links-container">
+            <div class="column">
+                <h3>LCG Links</h3>
+                <ul>
+                    <li><a href="https://www.lafayettela.gov/contact-us">Contact Us</a></li>
+                    <li><a href="https://apps.lafayettela.gov/OBCouncil/api/Document/2231983/">Council Agenda (Upcoming)</a></li>
+                    <li><a href="https://www.lafayettela.gov/legal/public-records-request">Public Records Request</a></li>
+                    <li><a href="https://www.311lafayette.services/en-US/">Request a Service</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Local Links</h3>
+                <ul>
+                    <li><a href="https://www.311lafayette.services/en-US/">Lafayette 311</a></li>
+                    <li><a href="https://lftairport.com/">Lafayette Airport</a></li>
+                    <li><a href="https://lafayetteassessor.com/">Lafayette Assessor</a></li>
+                    <li><a href="https://www.lpssonline.com/">Lafayette School System</a></li>
+                    <li><a href="https://lcg.maps.arcgis.com/apps/PublicGallery/index.html?appid=78489875143d490e82534c5b9073a55b">Lafayette Maps</a></li>
+                    <li><a href="https://www.lafayettela.gov/DP/FloodplainManagement/Maps">Flood Maps</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="https://downtownlafayette.org/">Lafayette Downtown</a></li>
+                    <li><a href="https://lafayette.org/">Lafayette Economic Development</a></li>
+                    <li><a href="https://www.lafayettela.gov/municipalities">Lafayette Municipalities</a></li>
+                    <li><a href="https://www.lafayettetravel.com/">Lafayette Travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p><a href="https://www.lafayettela.gov/disclaimer">Disclaimer</a>, <a href="https://www.lafayettela.gov/privacy-policy">Privacy Policy</a></p>
+            <p>&copy; Lafayette Consolidated Government</p>
+            <p>Physical Address: 705 West University Avenue, Lafayette, LA</p>
+            <p>General Information/Questions: (337) 291-8200 or 311</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
