@@ -73,7 +73,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #cac8c8;
     padding: 2rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -111,7 +111,7 @@ section {
 .dropdown-content {
     display: none;
     margin-top: 1rem;
-    background-color: #f9f9f9;
+    background-color: #cac8c8;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
