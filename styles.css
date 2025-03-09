@@ -112,7 +112,7 @@ section {
     display: none;
     margin-top: 1rem;
     background-color: #f9f9f9;
-    padding: 1rem;
+    padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     animation: slideDown 0.3s forwards;
